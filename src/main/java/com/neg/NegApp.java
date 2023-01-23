@@ -1,8 +1,6 @@
 package com.neg;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -17,8 +15,6 @@ import javafx.stage.Stage;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
 
 public class NegApp extends Application {
     Engine engine = new Engine();
@@ -30,19 +26,6 @@ public class NegApp extends Application {
     @Override
     public void start(Stage stage) {
         Path pathFisier = Paths.get("C:\\Users\\" + System.getenv("username") + "\\AppData\\Roaming\\Adobe\\Lightroom\\Preferences\\Lightroom Classic CC 7 Preferences.agprefs");
-        Map<String, String> stringuriCandidate = new HashMap<String, String>();
-        stringuriCandidate.put("	photosAppliedV4 = 12,\\", "	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 11,\\", " photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 10,\\", " photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 9,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 8,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 7,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 6,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 5,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 4,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 3,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 2,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 1,\\", " 	photosAppliedV4 = 0,\\");
 
         try {
             Group root = new Group();
@@ -165,7 +148,7 @@ public class NegApp extends Application {
 
             ext.setOnAction(arg0 -> engine.exitApp());
             reset.setOnAction(arg0 -> {
-                engine.resetCounter(pathFisier, stringuriCandidate);
+                engine.resetCounter(pathFisier, engine.getStringuriCandidate());
                 double parametru = 0;
                 for (int i = 0; i <= 12; i++) {
                     parametru += 20;
@@ -179,5 +162,4 @@ public class NegApp extends Application {
             e.printStackTrace();
         }
     }
-
 }
