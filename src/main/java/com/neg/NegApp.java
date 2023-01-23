@@ -163,22 +163,14 @@ public class NegApp extends Application {
             ext.setLayoutY(80);
             root.getChildren().add(ext);
 
-            ext.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent arg0) {
-                    engine.exitApp();
-                }
-            });
-            reset.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent arg0) {
-                    engine.resetCounter(pathFisier, stringuriCandidate);
-                    double parametru = 0;
-                    for (int i = 0; i <= 12; i++) {
-                        parametru += 20;
-                        root.getChildren().add(engine.loader(parametru));
-                        contor.setText(engine.counterFoto(pathFisier));
-                    }
+            ext.setOnAction(arg0 -> engine.exitApp());
+            reset.setOnAction(arg0 -> {
+                engine.resetCounter(pathFisier, stringuriCandidate);
+                double parametru = 0;
+                for (int i = 0; i <= 12; i++) {
+                    parametru += 20;
+                    root.getChildren().add(engine.loader(parametru));
+                    contor.setText(engine.counterFoto(pathFisier));
                 }
             });
             stage.setScene(scene);
