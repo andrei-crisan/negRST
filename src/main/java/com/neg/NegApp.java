@@ -32,8 +32,8 @@ public class NegApp extends Application {
         Path pathFisier = Paths.get("C:\\Users\\" + System.getenv("username") + "\\AppData\\Roaming\\Adobe\\Lightroom\\Preferences\\Lightroom Classic CC 7 Preferences.agprefs");
         Map<String, String> stringuriCandidate = new HashMap<String, String>();
         stringuriCandidate.put("	photosAppliedV4 = 12,\\", "	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 11,\\", " 	photosAppliedV4 = 0,\\");
-        stringuriCandidate.put("	photosAppliedV4 = 10,\\", " 	photosAppliedV4 = 0,\\");
+        stringuriCandidate.put("	photosAppliedV4 = 11,\\", " photosAppliedV4 = 0,\\");
+        stringuriCandidate.put("	photosAppliedV4 = 10,\\", " photosAppliedV4 = 0,\\");
         stringuriCandidate.put("	photosAppliedV4 = 9,\\", " 	photosAppliedV4 = 0,\\");
         stringuriCandidate.put("	photosAppliedV4 = 8,\\", " 	photosAppliedV4 = 0,\\");
         stringuriCandidate.put("	photosAppliedV4 = 7,\\", " 	photosAppliedV4 = 0,\\");
