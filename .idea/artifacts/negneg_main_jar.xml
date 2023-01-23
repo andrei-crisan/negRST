@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="negneg.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/negneg_main_jar</output-path>
+    <root id="archive" name="negneg.main.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="negneg.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/18.0.1/79b7b4ecf6a90692e4accdbf9e4e68714d235844/javafx-graphics-18.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/18.0.1/be9bf95be2716c11b88594eeaf4b832874265cc9/javafx-base-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/18.0.1/3285f1855bf294dd4eba57ba84f96c555c819260/javafx-base-18.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/18.0.1/4180a4bfda9692cbb444fb70b2506546e03f961b/javafx-graphics-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/18.0.1/22cf4d2bbb80d0d0430fcf71cdf0dfe3475ebd93/javafx-controls-18.0.1-win.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>
