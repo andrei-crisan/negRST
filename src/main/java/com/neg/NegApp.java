@@ -127,7 +127,7 @@ public class NegApp extends Application {
             root.getChildren().add(labelContor);
 
             Text contor = new Text();
-            contor.setText(engine.counterFoto(pathFisier));
+            contor.setText(engine.counterAvailablePhotos(pathFisier));
             contor.setFill(Color.WHITE);
             contor.setX(43);
             contor.setY(93);
@@ -147,12 +147,12 @@ public class NegApp extends Application {
 
             ext.setOnAction(arg0 -> engine.exitApp());
             reset.setOnAction(arg0 -> {
-                engine.resetCounter(pathFisier, engine.getStringuriCandidate());
+                engine.resetCounter(pathFisier);
                 double parametru = 0;
                 for (int i = 0; i <= 12; i++) {
                     parametru += 20;
                     root.getChildren().add(engine.loader(parametru));
-                    contor.setText(engine.counterFoto(pathFisier));
+                    contor.setText(engine.counterAvailablePhotos(pathFisier));
                 }
             });
             stage.setScene(scene);
